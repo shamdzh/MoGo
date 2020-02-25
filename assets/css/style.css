@@ -476,7 +476,7 @@ hr {
 	display: flex;
 	flex-direction: row;
 	align-items: center;
-
+	cursor: pointer;
 	padding: 19px 0;
 
 	/* border-bottom: 1px solid #e5e5e5; */
@@ -486,6 +486,7 @@ hr {
 
 .item__title--active {
 border-bottom: 1px solid #e5e5e5;
+
 }
 
 .img__row {
@@ -528,6 +529,8 @@ border-bottom: 1px solid #e5e5e5;
 
 .reviews {
 	padding: 0 110px;
+
+	position: relative;
 	
 }
 
@@ -543,4 +546,82 @@ border-bottom: 1px solid #e5e5e5;
 	left: 0;
 	z-index: 1;
 	transform: translateY(-50%);
+	
+	border: 1px solid #95e1d3;
+}
+
+.reviews__text {
+	font-weight: 300;
+	font-size: 22px;
+	font-style: italic;
+	color: #999;
+	line-height: 1.5;
+}
+
+.reviews__author {
+
+font-family: 'Kaushan Script', cursive;
+font-weight: bold;
+font-size: 24px;
+color: #333;
+
+
+margin-top: 15px;
+
+}
+
+
+.reviews__author:before {
+	content: "";
+	display: inline-block;
+	vertical-align: middle;
+
+	width: 60px;
+	height: 3px;
+
+	margin-right: 10px;
+
+	background-color: #f38181;
+}
+
+
+.reviews__btn {
+	font-size: 0;
+	color: transparent;
+
+	position: absolute;
+	z-index: 1;
+	top: 50%;
+
+	transform: translateY(-50%);
+}
+
+
+.reviews__btn:after {
+	content: "";
+	display: block;
+
+	width: 16px;
+	height: 16px;
+
+	border-top: 2px solid #ccc;
+	border-right: 2px solid #ccc;
+
+
+
+	
+
+
+}
+
+.reviews__btn--prev {
+
+	transform: rotate(225deg);
+	left: 0;
+}
+
+.reviews__btn--next {
+
+	transform: rotate(45deg);
+	right: 0;
 }
