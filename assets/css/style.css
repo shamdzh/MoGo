@@ -223,10 +223,14 @@ h1, h2, h3, h4, h5, h6 {
 .about {
 	display: flex;
 	justify-content: space-between; 
+
+	margin-top: 60px;
 }
 
 .about__item {
+	position: relative;
 	width: 380px;
+	background: #95e1d3;
 }
 
 .about__item:hover .about__img {
@@ -238,6 +242,11 @@ h1, h2, h3, h4, h5, h6 {
 	opacity: 0.1;
 }
 
+.about__item:hover .about__text {
+
+	opacity: 1;
+}
+
 .about__img {
 	background: linear-gradient(to bottom, #f38181, #fce38a);
 	transition: transform 0.1s linear;
@@ -247,7 +256,27 @@ h1, h2, h3, h4, h5, h6 {
 .about__img img {
 	display: block;
 	transition: opacity 0.1s linear;
+}
 
+.about__text {
+	font-size: 18px;
+	color: #fff;
+	text-transform: uppercase;
+	font-weight: 700;
+
+	opacity: 0;
+
+	position: absolute;
+	top: 50%;
+	left: 0;
+	transform: translateY(-50%);
+	z-index: 2;
+
+	text-align: center;
+
+	width: 100%;
+
+	transition: opacity 0.2s linear;
 }
 
 /* Statistic: */
@@ -270,7 +299,7 @@ border-left: 1px solid #fff;
 text-transform: uppercase; 
 text-align: center;
 color: #fff;
-font-size: 12px;
+font-size: 13px;
 padding: 40px 30px;
 }
 
@@ -333,22 +362,22 @@ padding: 40px 30px;
 }
 
 
-.selection__text {
+.section__text {
 	color: #a8a8a8;
 	max-width: 950px;
 	text-align: center;
-	margin: 0 auto 90px;
+	margin: 0 auto 0px;
 
 	
 }
 
-.selection__items {
+.section__items {
 	display: flex;
 	flex-direction: row;
 	
 }
 
-.selection__item {
+.section__item {
 	position: relative;
 	flex: 1 1 0;
 	padding-left: 60px;
@@ -403,11 +432,11 @@ hr {
 	z-index: 1;
 }
 
-/*What we do*/
+/*   What we do   */
 
 .section__what {
 
-	margin-top: 50px;
+	margin-top: 60px;
 
 	display: flex;
 	flex-direction: row;
@@ -456,6 +485,19 @@ border-bottom: 1px solid #e5e5e5;
 .img__icon {
 	width: 4%;
 	margin-left: 15px;
+}
+
+.servise__title {
+
+	width: 100%;
+	line-height: 1;
+	font-size: 22px;
+	
+	font-weight: 700;
+	font-family: Montserrat;
+	margin-bottom: 20px;
+	
+
 }
 
 .item__title {
