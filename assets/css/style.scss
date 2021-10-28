@@ -6,7 +6,6 @@ body {
 	color: #333;
 }
 
-
 *,
 *:before,
 *:after {
@@ -104,6 +103,9 @@ h1, h2, h3, h4, h5, h6 {
 
 
 .intro {
+
+	position: relative;
+
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
@@ -668,13 +670,13 @@ margin-top: 8px;
 
 .reviews__btn--prev {
 
-	// transform: rotate(225deg);
+	transform: rotate(225deg);
 	left: 0;
 }
 
 .reviews__btn--next {
 
-	// transform: rotate(45deg);
+	transform: rotate(45deg);
 	right: 0;
 }
 
